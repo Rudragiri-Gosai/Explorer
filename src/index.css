@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-indigo-600 text-white hover:bg-indigo-700;
+  }
+
+  .hero-title {
+    @apply font-['Playfair_Display'] text-7xl md:text-8xl lg:text-9xl;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+canvas {
+  touch-action: none;
+}
