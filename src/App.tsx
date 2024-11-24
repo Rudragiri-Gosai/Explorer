@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Code2, Github } from 'lucide-react';
+import { Code2,Github } from 'lucide-react';
 import { languages } from './data/languages';
 import LanguageCard from './components/LanguageCard';
 import ProjectCard from './components/ProjectCard';
@@ -22,15 +22,13 @@ function Home() {
               <h1 className="text-2xl font-bold text-white">CodeProject Explorer</h1>
             </div>
             <div className="flex items-center space-x-4">
-              <AuthButton to="/login" variant="secondary">Sign In</AuthButton>
-              <AuthButton to="/signup">Sign Up</AuthButton>
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
               >
-                <Github className="h-5 w-5" />
+                <Github className="h-8 w-8" />
               </a>
             </div>
           </div>
@@ -100,8 +98,6 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );
