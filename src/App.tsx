@@ -6,8 +6,6 @@ import LanguageCard from './components/LanguageCard';
 import ProjectCard from './components/ProjectCard';
 import Background3D from './components/Background3D';
 import AuthButton from './components/AuthButton';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
 
 function Home() {
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
