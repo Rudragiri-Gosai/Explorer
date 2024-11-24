@@ -31,7 +31,7 @@ function Scene() {
 
 export default function Background3D() {
   return (
-    <div className="fixed inset-0 -z-10">
+    <div className="fixed inset-0 -z-0">
       <Canvas camera={{ position: [0, 0, 12], fov: 75 }}>
         <Scene />
       </Canvas>
